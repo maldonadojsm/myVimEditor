@@ -1,2 +1,2 @@
 # myVimEditor
-Exportable Vim Editor (Syntax Coloring, Autocompletion, Directories...)
+Exportable Linux AMI (AWS) Vim Editor (Syntax Coloring, Autocompletion, Directories...)
