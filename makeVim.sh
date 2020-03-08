@@ -8,3 +8,4 @@ cd ctags
 make
 sudo make install
 sudo python3 -m pip install flake8
+pip install yapf
