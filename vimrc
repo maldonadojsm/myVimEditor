@@ -28,6 +28,10 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'Yggdroot/indentLine'
 Plugin 'dense-analysis/ale'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'ervandew/supertab'
+
+
 
 
 " All of your Plugins must be added before the following line
@@ -53,7 +57,7 @@ imap jj <Esc>
 
 
 " indent for special file
-autocmd FileType c,cpp setlocal expandtab shiftwidth=2 softtabstop=2 cindent 
+autocmd FileType c,cpp setlocal expandtab shiftwidth=2 softtabstop=2 cindent
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4 autoindent
 
 " setup for ycm
@@ -77,6 +81,10 @@ let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['flake8']
+
+" superTab
+
+let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
 
 " autoformat
 augroup autoformat_settings
@@ -118,3 +126,24 @@ nmap <F8> :TagbarToggle<CR>
 let g:indentLine_char = '│'
 set tags=./tags,tags;$HOME
 "source ~/cscope_maps.vim
+
+" ale
+
+let g:ale_linters = {
+    \   'python': ['flake8']
+    \}
+
+function! LinterStatus() abort
+    let l:counts = ale#statusline#Count(bufnr(''))
+
+    let l:all_errors = l:counts.error + l:counts.style_error
+    let l:all_non_errors = l:counts.total - l:all_errors
+
+    return l:counts.total == 0 ? 'OK' : printf(
+    \   '%dW %dE',
+    \   all_non_errors,
+    \   all_errors
+    \)
+endfunction
+
+set statusline=%{LinterStatus()}
