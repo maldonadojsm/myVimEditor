@@ -43,7 +43,7 @@ main(){
 		--enable-gui=gtk2 \
 		--enable-cscope \
 		--prefix=/usr
-	make VIMRUNTIMEDIR=/usr/share/vim/vim74
+	make VIMRUNTIMEDIR=/usr/share/vim/vim82
 	sudo make install
 }
 
