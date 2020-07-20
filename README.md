@@ -14,4 +14,4 @@ bash makeVimAWS.sh
 bash makeVimPi.sh
 ```
 
-**Important: Run compileVim.sh if Vim version on OS doesn't support python 2/3 **
+**Important: Run compileVim.sh if Vim version on OS doesn't support python 2/3**
