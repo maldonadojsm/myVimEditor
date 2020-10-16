@@ -16,7 +16,7 @@ main(){
 		vim-tiny \
 		vim-common \
 		vim-gui-common
-	echo "y" | sudo apt-get install \
+	echo "y" | sudo apt install \
 		libncurses5-dev \
 		libgnome2-dev \
 		libgnomeui-dev \
