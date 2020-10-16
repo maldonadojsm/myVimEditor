@@ -17,4 +17,15 @@ bash makeVimPi.sh
 ```
 **2.** Open Vim and type ***:PluginInstall***
 
-**Important: Run compileVim.sh if Vim version on OS doesn't support python 2/3**
+**Important: If Vim version on OS doesn't support python 2/3**
+
+1.
+
+``` console
+sudo apt install libncurses5-dev
+```
+2. 
+
+``` console
+bash compileVim.sh
+```
