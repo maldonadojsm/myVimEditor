@@ -1,5 +1,5 @@
 # myVimEditor
-Exportable Vim Editor (Autocompletion, Syntax Highlighting, Linter, Directory...)
+Exportable Vim Editor (Autocompletion, Syntax Highlighting, Linter, Directory...) which utilizes Vundle.
 
 ## Installation
 
