@@ -3,7 +3,7 @@ Exportable Vim Editor (Autocompletion, Syntax Highlighting, Linter, Directory...
 
 ## Installation
 
-**1.**
+**1.** Run Bash Script
 
 If Linux AMI / Redhat:
 
