@@ -18,6 +18,7 @@ main(){
 		vim-gui-common
 	echo "y" | sudo apt install \
 		libncurses5-dev \
+		libncursesw5-dev \
 		libgnome2-dev \
 		libgnomeui-dev \
 		libgtk2.0-dev \
