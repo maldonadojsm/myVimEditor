@@ -3,7 +3,12 @@ Exportable Vim Editor (Autocompletion, Syntax Highlighting, Linter, Directory...
 
 ## Installation
 
-**1.** Run Bash Script
+**1.** Install Vim 
+
+``` console
+sudo apt install vim
+```
+**2.** Run Bash Script
 
 If Linux AMI / Redhat:
 
