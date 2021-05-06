@@ -28,7 +28,6 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'Yggdroot/indentLine'
 Plugin 'dense-analysis/ale'
-Plugin 'davidhalter/jedi-vim'
 Plugin 'ervandew/supertab'
 
 
