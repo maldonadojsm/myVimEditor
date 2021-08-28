@@ -99,10 +99,16 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 map <silent> <F5> : NERDTreeToggle<CR>
 
 " setup for gruvbox
-set t_Co=256
-set background=dark
-colorscheme gruvbox
+" set t_Co=256
+" set background=dark
+" colorscheme gruvbox
 " let g:gruvbox_contrast_dark = 'soft'
+
+
+" setup solarized dark
+syntax enable
+set background=dark
+colorscheme solarized
 
 " setup for ctrlp
 let g:ctrlp_map = '<c-p>'
