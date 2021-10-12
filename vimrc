@@ -30,8 +30,6 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'dense-analysis/ale'
 Plugin 'ervandew/supertab'
 
-
-
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 call glaive#Install()        " enable this line after the installation of glaive
@@ -51,6 +49,7 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 set autoindent
+set clipboard=unnamed
 imap jj <Esc>
 
 
@@ -88,6 +87,7 @@ let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
 augroup autoformat_settings
   autocmd FileType c,cpp,proto,javascript AutoFormatBuffer clang-format
   autocmd FileType python AutoFormatBuffer yapf
+  autocmd FileType go AutoFormatBuffer gofmt
 augroup END
 " use google style for clang-format
 Glaive codefmt clang_format_style='google'
@@ -99,16 +99,12 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 map <silent> <F5> : NERDTreeToggle<CR>
 
 " setup for gruvbox
-" set t_Co=256
-" set background=dark
-" colorscheme gruvbox
-" let g:gruvbox_contrast_dark = 'soft'
-
-
-" setup solarized dark
-syntax enable
+set t_Co=256
 set background=dark
-colorscheme solarized
+colorscheme gruvbox
+let g:gruvbox_contrast_dark = 'soft'
+
+
 
 " setup for ctrlp
 let g:ctrlp_map = '<c-p>'
