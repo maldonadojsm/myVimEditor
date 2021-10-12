@@ -3,7 +3,7 @@ Exportable Vim Editor (Autocompletion, Syntax Highlighting, Linter, Directory...
 
 ## Installation
 
-**1.** Install Vim 
+**1.** Install Vim (Optional)
 
 ``` console
 sudo apt install vim
