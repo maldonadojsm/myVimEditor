@@ -10,7 +10,7 @@ sudo apt install vim
 ```
 **2.** Run Bash Script
 
-If Linux AMI / Redhat:
+If Linux AMI / Redhat / OSX:
 
 ``` console
 bash makeVimAWS.sh
