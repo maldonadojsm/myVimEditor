@@ -51,7 +51,8 @@ set softtabstop=4
 set autoindent
 set clipboard=unnamed
 imap jj <Esc>
-
+nnoremap P ciw<C-R>0<Esc>
+nnoremap Y yiw
 
 " indent for special file
 autocmd FileType c,cpp setlocal expandtab shiftwidth=2 softtabstop=2 cindent
